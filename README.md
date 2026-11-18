@@ -8,8 +8,4 @@ Servicio Java/Spring Boot organizado con arquitectura hexagonal:
 - `Infrastucture/Outbound/Persistence`: adaptadores MongoDB y perfil local en memoria.
 - `Infrastucture/Outbound/Messaging`: adaptador Kafka.
 
-Para ejecutar sin MongoDB ni Kafka se puede usar el perfil `local`:
 
-```shell
-mvn spring-boot:run -Dspring-boot.run.profiles=local
-```
