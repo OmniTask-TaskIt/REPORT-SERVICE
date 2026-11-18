@@ -14,8 +14,13 @@ public class MessageClient {
     private final RestClient restClient;
 
     public MessageClient(RestClient.Builder builder, @Value("${chat.service.url}") String chatServiceUrl) {
+        String normalizedUrl = chatServiceUrl.trim();
+        if ((normalizedUrl.startsWith("\"") && normalizedUrl.endsWith("\""))
+                || (normalizedUrl.startsWith("'") && normalizedUrl.endsWith("'"))) {
+            normalizedUrl = normalizedUrl.substring(1, normalizedUrl.length() - 1);
+        }
         this.restClient = builder
-                .baseUrl(chatServiceUrl)
+                .baseUrl(normalizedUrl)
                 .build();
     }
 
