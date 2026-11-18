@@ -1,0 +1,16 @@
+C:\Users\range\OneDrive\Escritorio\RPAD\rpad-service\src\main\java\com\taskit\rpadservice\Application\Ports\Inbound\CreateReportUseCase.java
+C:\Users\range\OneDrive\Escritorio\RPAD\rpad-service\src\main\java\com\taskit\rpadservice\Application\Ports\Inbound\DefineReportWinnerUseCase.java
+C:\Users\range\OneDrive\Escritorio\RPAD\rpad-service\src\main\java\com\taskit\rpadservice\Application\Ports\Inbound\GetReportMessagesUseCase.java
+C:\Users\range\OneDrive\Escritorio\RPAD\rpad-service\src\main\java\com\taskit\rpadservice\Application\Ports\Inbound\GetReportReasonUseCase.java
+C:\Users\range\OneDrive\Escritorio\RPAD\rpad-service\src\main\java\com\taskit\rpadservice\Application\Services\InvalidReportDataException.java
+C:\Users\range\OneDrive\Escritorio\RPAD\rpad-service\src\main\java\com\taskit\rpadservice\Application\Services\ReportNotFoundException.java
+C:\Users\range\OneDrive\Escritorio\RPAD\rpad-service\src\main\java\com\taskit\rpadservice\Application\Services\ReportService.java
+C:\Users\range\OneDrive\Escritorio\RPAD\rpad-service\src\main\java\com\taskit\rpadservice\Domain\Model\Message.java
+C:\Users\range\OneDrive\Escritorio\RPAD\rpad-service\src\main\java\com\taskit\rpadservice\Domain\Model\Report.java
+C:\Users\range\OneDrive\Escritorio\RPAD\rpad-service\src\main\java\com\taskit\rpadservice\Domain\Repository\ReportRepository.java
+C:\Users\range\OneDrive\Escritorio\RPAD\rpad-service\src\main\java\com\taskit\rpadservice\Infrastucture\Inbound\ReportController.java
+C:\Users\range\OneDrive\Escritorio\RPAD\rpad-service\src\main\java\com\taskit\rpadservice\Infrastucture\MessageDTO.java
+C:\Users\range\OneDrive\Escritorio\RPAD\rpad-service\src\main\java\com\taskit\rpadservice\Infrastucture\Outbound\Messaging\MessageClient.java
+C:\Users\range\OneDrive\Escritorio\RPAD\rpad-service\src\main\java\com\taskit\rpadservice\Infrastucture\Outbound\Persistence\ReportRepositoryAdapter.java
+C:\Users\range\OneDrive\Escritorio\RPAD\rpad-service\src\main\java\com\taskit\rpadservice\Infrastucture\Outbound\Persistence\ReportRepositoryMongo.java
+C:\Users\range\OneDrive\Escritorio\RPAD\rpad-service\src\main\java\com\taskit\rpadservice\RpadServiceApplication.java

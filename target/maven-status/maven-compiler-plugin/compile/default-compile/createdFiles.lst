@@ -1,0 +1,17 @@
+com\taskit\rpadservice\Domain\Model\Message.class
+com\taskit\rpadservice\Infrastucture\Outbound\Messaging\MessageClient.class
+com\taskit\rpadservice\Application\Ports\Inbound\CreateReportUseCase.class
+com\taskit\rpadservice\Infrastucture\Inbound\ReportController.class
+com\taskit\rpadservice\RpadServiceApplication.class
+com\taskit\rpadservice\Domain\Repository\ReportRepository.class
+com\taskit\rpadservice\Application\Services\ReportNotFoundException.class
+com\taskit\rpadservice\Infrastucture\Outbound\Messaging\MessageClient$1.class
+com\taskit\rpadservice\Infrastucture\MessageDTO.class
+com\taskit\rpadservice\Domain\Model\Report.class
+com\taskit\rpadservice\Application\Ports\Inbound\DefineReportWinnerUseCase.class
+com\taskit\rpadservice\Infrastucture\Outbound\Persistence\ReportRepositoryAdapter.class
+com\taskit\rpadservice\Application\Ports\Inbound\GetReportReasonUseCase.class
+com\taskit\rpadservice\Infrastucture\Outbound\Persistence\ReportRepositoryMongo.class
+com\taskit\rpadservice\Application\Ports\Inbound\GetReportMessagesUseCase.class
+com\taskit\rpadservice\Application\Services\ReportService.class
+com\taskit\rpadservice\Application\Services\InvalidReportDataException.class
