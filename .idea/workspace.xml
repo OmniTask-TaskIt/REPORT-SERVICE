@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98a57b89-0da3-4363-a8fb-7dce68efa9c6" name="Changes" comment="si">
+    <list default="true" id="98a57b89-0da3-4363-a8fb-7dce68efa9c6" name="Changes" comment="client config">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Infrastucture/Outbound/config/S3Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Infrastucture/Outbound/config/S3ConnectionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Infrastucture/Outbound/Messaging/MessageClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Infrastucture/Outbound/Messaging/MessageClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,61 +45,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.6382017924249745" />
-      <entry key="MS500" value="5.023661697905566" />
-      <entry key="S2" value="12.493153629882594" />
-      <entry key="S5" value="19.442143396155153" />
-      <entry key="S10" value="24.017767263665885" />
-      <entry key="S30" value="28.57459730974362" />
-      <entry key="S60" value="30.439342219119773" />
-      <entry key="M2" value="32.59704596072386" />
-      <entry key="M5" value="52.086855563663825" />
-      <entry key="M10" value="124.42974121572585" />
-      <entry key="M15" value="209.86513652789867" />
-      <entry key="M30" value="422.57843930812436" />
-      <entry key="H1" value="670.9601116841742" />
-      <entry key="H2" value="890.8415935544456" />
-      <entry key="H4" value="1045.9707804241648" />
-      <entry key="D1" value="1209.6022515911682" />
-      <entry key="W1" value="1241.5510847832998" />
+      <entry key="MS100" value="1.0293892031328913" />
+      <entry key="MS500" value="2.234439003330467" />
+      <entry key="S2" value="7.934446689606325" />
+      <entry key="S5" value="20.243700467346596" />
+      <entry key="S10" value="31.634247531663373" />
+      <entry key="S30" value="44.290486795737564" />
+      <entry key="S60" value="48.56009573289824" />
+      <entry key="M2" value="54.209193081303425" />
+      <entry key="M5" value="85.5637156283942" />
+      <entry key="M10" value="136.41731870939722" />
+      <entry key="M15" value="173.78659059382784" />
+      <entry key="M30" value="245.06259482722933" />
+      <entry key="H1" value="374.07432606505387" />
+      <entry key="H2" value="641.1789204394354" />
+      <entry key="H4" value="972.8723578489672" />
+      <entry key="D1" value="1488.942733936531" />
+      <entry key="W1" value="1612.200060286834" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
       <entry key="S2" value="0.0" />
-      <entry key="S5" value="2.1190848628623555E-183" />
-      <entry key="S10" value="4.603351890592696E-92" />
-      <entry key="S30" value="3.5839179484448416E-31" />
-      <entry key="S60" value="5.986583289745404E-16" />
-      <entry key="M2" value="2.4467571977332287E-8" />
-      <entry key="M5" value="9.110655679989042E-4" />
-      <entry key="M10" value="0.03554608356365283" />
-      <entry key="M15" value="0.14753798468405874" />
-      <entry key="M30" value="0.8030726344186463" />
-      <entry key="H1" value="2.1163676535833242" />
-      <entry key="H2" value="3.5339922675391677" />
-      <entry key="H4" value="4.595767606764871" />
-      <entry key="D1" value="5.737711733676421" />
-      <entry key="W1" value="5.961771234278238" />
+      <entry key="S5" value="2.344999523413854E-149" />
+      <entry key="S10" value="8.031351806894793E-75" />
+      <entry key="S30" value="5.112350712545682E-25" />
+      <entry key="S60" value="1.5902483662076389E-12" />
+      <entry key="M2" value="3.106123678686012E-6" />
+      <entry key="M5" value="0.023636062165270217" />
+      <entry key="M10" value="0.5272211759913695" />
+      <entry key="M15" value="1.5162886326372724" />
+      <entry key="M30" value="4.424247474359671" />
+      <entry key="H1" value="7.816697686090443" />
+      <entry key="H2" value="11.13670827993931" />
+      <entry key="H4" value="14.056248414171492" />
+      <entry key="D1" value="17.962049541407627" />
+      <entry key="W1" value="18.84510010142628" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.5446834184331644" />
-      <entry key="MS500" value="4.973535304723643" />
-      <entry key="S2" value="12.462834414222542" />
-      <entry key="S5" value="19.423036625391234" />
-      <entry key="S10" value="24.00585424575098" />
-      <entry key="S30" value="28.569562883141312" />
-      <entry key="S60" value="30.436068508561362" />
-      <entry key="M2" value="32.593949648472424" />
-      <entry key="M5" value="52.08464745931608" />
-      <entry key="M10" value="124.46201062308829" />
-      <entry key="M15" value="210.00893908400693" />
-      <entry key="M30" value="423.3765657550949" />
-      <entry key="H1" value="673.0712906965043" />
-      <entry key="H2" value="894.3715601391951" />
-      <entry key="H4" value="1050.5639996874684" />
-      <entry key="D1" value="1215.3394422940403" />
-      <entry key="W1" value="1247.512778877696" />
+      <entry key="MS100" value="0.9876854104298556" />
+      <entry key="MS500" value="2.2179841076814966" />
+      <entry key="S2" value="7.92024800578404" />
+      <entry key="S5" value="20.229115652003156" />
+      <entry key="S10" value="31.62281848119666" />
+      <entry key="S30" value="44.28514306234214" />
+      <entry key="S60" value="48.5571647796891" />
+      <entry key="M2" value="54.20755400716873" />
+      <entry key="M5" value="85.58572590253513" />
+      <entry key="M10" value="136.9389166005423" />
+      <entry key="M15" value="175.29337020970672" />
+      <entry key="M30" value="249.47377219032649" />
+      <entry key="H1" value="381.87944355601905" />
+      <entry key="H2" value="652.30709191634" />
+      <entry key="H4" value="986.9230252787813" />
+      <entry key="D1" value="1506.903545991313" />
+      <entry key="W1" value="1631.04497346945" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -138,6 +141,15 @@
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="RpadServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="rpad-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.taskit.rpadservice.RpadServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -164,6 +176,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="si" />
-    <option name="LAST_COMMIT_MESSAGE" value="si" />
+    <MESSAGE value="client config" />
+    <option name="LAST_COMMIT_MESSAGE" value="client config" />
   </component>
 </project>
