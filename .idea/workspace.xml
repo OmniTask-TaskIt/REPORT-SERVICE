@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98a57b89-0da3-4363-a8fb-7dce68efa9c6" name="Changes" comment="s3 config">
+    <list default="true" id="98a57b89-0da3-4363-a8fb-7dce68efa9c6" name="Changes" comment="report control features">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Application/Ports/Inbound/CreateReportUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Application/Ports/Inbound/CreateReportUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Application/Services/FileStorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Application/Services/FileStorageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Application/Services/ReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Application/Services/ReportService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Domain/Model/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Domain/Model/Report.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Domain/Repository/ReportRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Domain/Repository/ReportRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Infrastucture/Inbound/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Infrastucture/Inbound/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Infrastucture/Inbound/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Infrastucture/Inbound/ReportController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Infrastucture/Outbound/Persistence/ReportRepositoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Infrastucture/Outbound/Persistence/ReportRepositoryAdapter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,23 +41,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.000077712730141" />
-      <entry key="S5" value="1.1879998481071332" />
-      <entry key="S10" value="3.7964829360037164" />
-      <entry key="S30" value="18.451409154778453" />
-      <entry key="S60" value="28.6893084995758" />
-      <entry key="M2" value="35.89800665697291" />
-      <entry key="M5" value="41.41008499857249" />
-      <entry key="M10" value="52.890032271075206" />
-      <entry key="M15" value="75.89264926541259" />
-      <entry key="M30" value="170.22593241718894" />
-      <entry key="H1" value="410.83529988413665" />
-      <entry key="H2" value="950.9079335518217" />
-      <entry key="H4" value="1806.913296876339" />
-      <entry key="D1" value="3690.192385450825" />
-      <entry key="W1" value="4253.497588033005" />
+      <entry key="MS100" value="1.000549055608279" />
+      <entry key="MS500" value="1.3322523830878288" />
+      <entry key="S2" value="2.790957000838806" />
+      <entry key="S5" value="4.062463751143804" />
+      <entry key="S10" value="4.848458158801726" />
+      <entry key="S30" value="5.564085704970736" />
+      <entry key="S60" value="5.775209079183487" />
+      <entry key="M2" value="6.045009497852144" />
+      <entry key="M5" value="10.699449955631183" />
+      <entry key="M10" value="23.881742987991405" />
+      <entry key="M15" value="42.848258028372065" />
+      <entry key="M30" value="124.63075652126605" />
+      <entry key="H1" value="348.9752907799412" />
+      <entry key="H2" value="874.8353832769486" />
+      <entry key="H4" value="1733.1778876783987" />
+      <entry key="D1" value="3668.5395443488515" />
+      <entry key="W1" value="4254.9294675067395" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -73,37 +65,37 @@
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
-      <entry key="S30" value="2.6861494793880714E-244" />
-      <entry key="S60" value="3.645186278570545E-122" />
-      <entry key="M2" value="4.7026875917195925E-61" />
-      <entry key="M5" value="2.7901405269123416E-24" />
-      <entry key="M10" value="5.7282019708791E-12" />
-      <entry key="M15" value="7.43816024495015E-8" />
-      <entry key="M30" value="9.798988258095265E-4" />
-      <entry key="H1" value="0.11633066978202627" />
-      <entry key="H2" value="1.3586021580598313" />
-      <entry key="H4" value="4.909498729617623" />
-      <entry key="D1" value="15.073606645691958" />
-      <entry key="W1" value="18.37898358279565" />
+      <entry key="S30" value="1.0498567170565613E-253" />
+      <entry key="S60" value="7.206421398218486E-127" />
+      <entry key="M2" value="2.090961769300618E-63" />
+      <entry key="M5" value="3.197614191697431E-25" />
+      <entry key="M10" value="1.9391808561739068E-12" />
+      <entry key="M15" value="3.6129797342591334E-8" />
+      <entry key="M30" value="6.829379315275197E-4" />
+      <entry key="H1" value="0.09711676945619956" />
+      <entry key="H2" value="1.2413444289537348" />
+      <entry key="H4" value="4.692855174069022" />
+      <entry key="D1" value="14.9606516652396" />
+      <entry key="W1" value="18.359245241515058" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.948573144339498E-22" />
-      <entry key="MS500" value="4.549287069088506E-5" />
-      <entry key="S2" value="0.0822045593912774" />
-      <entry key="S5" value="0.5558277288362934" />
-      <entry key="S10" value="3.402126935582128" />
-      <entry key="S30" value="18.29593655651608" />
-      <entry key="S60" value="28.607793179240833" />
-      <entry key="M2" value="35.856210826809715" />
-      <entry key="M5" value="41.39309958127253" />
-      <entry key="M10" value="52.88144154676001" />
-      <entry key="M15" value="75.88682979793637" />
-      <entry key="M30" value="170.223817581766" />
-      <entry key="H1" value="410.94966006906066" />
-      <entry key="H2" value="952.2643067396286" />
-      <entry key="H4" value="1811.820055542176" />
-      <entry key="D1" value="3705.2647660538405" />
-      <entry key="W1" value="4271.876360530684" />
+      <entry key="MS100" value="0.9731926797759244" />
+      <entry key="MS500" value="1.3251133002035784" />
+      <entry key="S2" value="2.7731144927324394" />
+      <entry key="S5" value="4.03612135473882" />
+      <entry key="S10" value="4.8275362000306865" />
+      <entry key="S30" value="5.554550982815691" />
+      <entry key="S60" value="5.770050226074623" />
+      <entry key="M2" value="6.042141519530461" />
+      <entry key="M5" value="10.696404843921894" />
+      <entry key="M10" value="23.878281148468766" />
+      <entry key="M15" value="42.84506126610978" />
+      <entry key="M30" value="124.62909708580527" />
+      <entry key="H1" value="349.070669646983" />
+      <entry key="H2" value="876.0746446446954" />
+      <entry key="H4" value="1737.86810045898" />
+      <entry key="D1" value="3683.4989752841657" />
+      <entry key="W1" value="4273.288501336285" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -182,6 +174,7 @@
     <MESSAGE value="si" />
     <MESSAGE value="client config" />
     <MESSAGE value="s3 config" />
-    <option name="LAST_COMMIT_MESSAGE" value="s3 config" />
+    <MESSAGE value="report control features" />
+    <option name="LAST_COMMIT_MESSAGE" value="report control features" />
   </component>
 </project>
