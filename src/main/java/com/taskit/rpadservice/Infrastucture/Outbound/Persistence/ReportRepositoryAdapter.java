@@ -43,4 +43,9 @@ public class ReportRepositoryAdapter implements ReportRepository {
                 .filter(report -> report.getUsers() != null && report.getUsers().contains(userId))
                 .toList();
     }
+
+    @Override
+    public void deleteById(String reportID) {
+        repository.deleteById(reportID);
+    }
 }

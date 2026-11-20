@@ -11,5 +11,5 @@ public interface ReportRepository {
     List<Report> findAll();
     List<Report> findAllByStatus(String status);
     List<Report> findAllByUserId(String userId);
-
+    void deleteById(String reportID);
 }

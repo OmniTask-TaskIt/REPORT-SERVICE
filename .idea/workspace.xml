@@ -6,12 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="98a57b89-0da3-4363-a8fb-7dce68efa9c6" name="Changes" comment="s3 config">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Application/Ports/Inbound/UploadFileUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Application/Ports/Inbound/UploadFileUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Application/Ports/Outbound/FileStoragePort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Application/Ports/Outbound/FileStoragePort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Application/Ports/Inbound/CreateReportUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Application/Ports/Inbound/CreateReportUseCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Application/Services/FileStorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Application/Services/FileStorageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Application/Services/ReportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Application/Services/ReportService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Domain/Model/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Domain/Model/Report.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Domain/Repository/ReportRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Domain/Repository/ReportRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Infrastucture/Inbound/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Infrastucture/Inbound/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Infrastucture/Outbound/Storage/S3FileStorageAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Infrastucture/Outbound/Storage/S3FileStorageAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Infrastucture/Inbound/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Infrastucture/Inbound/ReportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Infrastucture/Outbound/Persistence/ReportRepositoryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/taskit/rpadservice/Infrastucture/Outbound/Persistence/ReportRepositoryAdapter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,61 +49,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.808184320619426" />
-      <entry key="MS500" value="3.4509418878976263" />
-      <entry key="S2" value="9.752995834566303" />
-      <entry key="S5" value="19.054033262052684" />
-      <entry key="S10" value="25.826573324130504" />
-      <entry key="S30" value="45.850556161979334" />
-      <entry key="S60" value="83.34383434920166" />
-      <entry key="M2" value="142.18749722399053" />
-      <entry key="M5" value="283.45304326078366" />
-      <entry key="M10" value="451.08870155668683" />
-      <entry key="M15" value="561.172631060346" />
-      <entry key="M30" value="753.3451854280576" />
-      <entry key="H1" value="967.4942692463266" />
-      <entry key="H2" value="1282.9899809132287" />
-      <entry key="H4" value="1661.1435119724351" />
-      <entry key="D1" value="2267.2709983003956" />
-      <entry key="W1" value="2415.6246680401237" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.000077712730141" />
+      <entry key="S5" value="1.1879998481071332" />
+      <entry key="S10" value="3.7964829360037164" />
+      <entry key="S30" value="18.451409154778453" />
+      <entry key="S60" value="28.6893084995758" />
+      <entry key="M2" value="35.89800665697291" />
+      <entry key="M5" value="41.41008499857249" />
+      <entry key="M10" value="52.890032271075206" />
+      <entry key="M15" value="75.89264926541259" />
+      <entry key="M30" value="170.22593241718894" />
+      <entry key="H1" value="410.83529988413665" />
+      <entry key="H2" value="950.9079335518217" />
+      <entry key="H4" value="1806.913296876339" />
+      <entry key="D1" value="3690.192385450825" />
+      <entry key="W1" value="4253.497588033005" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
       <entry key="S2" value="0.0" />
-      <entry key="S5" value="1.6021042853605944E-280" />
-      <entry key="S10" value="2.099242749629519E-140" />
-      <entry key="S30" value="7.042258723390634E-47" />
-      <entry key="S60" value="1.86642535949056E-23" />
-      <entry key="M2" value="1.0641223837510814E-11" />
-      <entry key="M5" value="1.539870706311949E-4" />
-      <entry key="M10" value="0.0425546881599941" />
-      <entry key="M15" value="0.2831945711952803" />
-      <entry key="M30" value="1.9120134101261408" />
-      <entry key="H1" value="5.138650456375401" />
-      <entry key="H2" value="9.029625204135206" />
-      <entry key="H4" value="12.65685672882786" />
-      <entry key="D1" value="17.65083668352479" />
-      <entry key="W1" value="18.79810530778655" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="2.6861494793880714E-244" />
+      <entry key="S60" value="3.645186278570545E-122" />
+      <entry key="M2" value="4.7026875917195925E-61" />
+      <entry key="M5" value="2.7901405269123416E-24" />
+      <entry key="M10" value="5.7282019708791E-12" />
+      <entry key="M15" value="7.43816024495015E-8" />
+      <entry key="M30" value="9.798988258095265E-4" />
+      <entry key="H1" value="0.11633066978202627" />
+      <entry key="H2" value="1.3586021580598313" />
+      <entry key="H4" value="4.909498729617623" />
+      <entry key="D1" value="15.073606645691958" />
+      <entry key="W1" value="18.37898358279565" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.7102301884100939" />
-      <entry key="MS500" value="3.414001285111217" />
-      <entry key="S2" value="9.726958652222866" />
-      <entry key="S5" value="19.033841114488816" />
-      <entry key="S10" value="25.812937772191763" />
-      <entry key="S30" value="45.842447154557505" />
-      <entry key="S60" value="83.33643783721256" />
-      <entry key="M2" value="142.18118672526245" />
-      <entry key="M5" value="283.44822251588266" />
-      <entry key="M10" value="451.1270009093357" />
-      <entry key="M15" value="561.4510267983819" />
-      <entry key="M30" value="755.2497145421441" />
-      <entry key="H1" value="972.6242883746162" />
-      <entry key="H2" value="1292.0121470896395" />
-      <entry key="H4" value="1673.7950672061809" />
-      <entry key="D1" value="2284.920571847057" />
-      <entry key="W1" value="2434.4225801412713" />
+      <entry key="MS100" value="1.948573144339498E-22" />
+      <entry key="MS500" value="4.549287069088506E-5" />
+      <entry key="S2" value="0.0822045593912774" />
+      <entry key="S5" value="0.5558277288362934" />
+      <entry key="S10" value="3.402126935582128" />
+      <entry key="S30" value="18.29593655651608" />
+      <entry key="S60" value="28.607793179240833" />
+      <entry key="M2" value="35.856210826809715" />
+      <entry key="M5" value="41.39309958127253" />
+      <entry key="M10" value="52.88144154676001" />
+      <entry key="M15" value="75.88682979793637" />
+      <entry key="M30" value="170.223817581766" />
+      <entry key="H1" value="410.94966006906066" />
+      <entry key="H2" value="952.2643067396286" />
+      <entry key="H4" value="1811.820055542176" />
+      <entry key="D1" value="3705.2647660538405" />
+      <entry key="W1" value="4271.876360530684" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{

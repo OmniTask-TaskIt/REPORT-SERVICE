@@ -18,16 +18,19 @@ public class Report {
     private String Status;
     private String winnerID;
     private List<String> users;
+    private String createdBy;
 
     public Report() {}
 
-    public Report(String reportID, String taskId, LocalDateTime timestamp, String reason, String winnerID, List<String> users) {
+    public Report(String reportID, String taskId, LocalDateTime timestamp, String reason,
+                  String winnerID, List<String> users, String createdBy) {
         this.reportID = reportID;
         this.taskId = taskId;
         this.timestamp = timestamp;
         this.reason = reason;
         this.winnerID = winnerID;
         this.users = users;
+        this.createdBy = createdBy;
     }
 
     public String getReportID() { return reportID; }
@@ -42,6 +45,8 @@ public class Report {
     public void setWinnerID(String winnerID) { this.winnerID = winnerID; }
     public List<String> getUsers() { return users; }
     public void setUsers(List<String> users) { this.users = users; }
+    public String getCreatedBy() { return createdBy; }
+    public void setCreatedBy(String createdBy) { this.createdBy = createdBy; }
     public String getStatus() { return Status; }
     public void setStatus(String status) { this.Status = status; }
 }

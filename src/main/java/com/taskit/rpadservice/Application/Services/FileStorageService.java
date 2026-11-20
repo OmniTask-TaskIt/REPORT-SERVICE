@@ -45,10 +45,10 @@ public class FileStorageService implements UploadFileUseCase, GetFilesByTaskIdUs
 
         String sanitizedFilename = originalFilename.replaceAll("[^a-zA-Z0-9._-]", "_");
         String prefix = "";
-        if (folder != null && !folder.isBlank()) {
-            prefix = folder.replaceAll("/+$", "") + "/";
-        } else if (taskId != null && !taskId.isBlank()) {
+        if (taskId != null && !taskId.isBlank()) {
             prefix = "tasks/" + taskId + "/";
+        } else if (folder != null && !folder.isBlank()) {
+            prefix = folder.replaceAll("/+$", "") + "/";
         }
 
         String fileKey = prefix + UUID.randomUUID() + "-" + sanitizedFilename;

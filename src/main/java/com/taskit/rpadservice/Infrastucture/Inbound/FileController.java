@@ -2,7 +2,9 @@ package com.taskit.rpadservice.Infrastucture.Inbound;
 
 import com.taskit.rpadservice.Application.Ports.Inbound.GetFilesByTaskIdUseCase;
 import com.taskit.rpadservice.Application.Ports.Inbound.UploadFileUseCase;
+import com.taskit.rpadservice.Application.Services.ReportService;
 import com.taskit.rpadservice.Application.Ports.Outbound.FileStoragePort;
+import com.taskit.rpadservice.Application.Services.ReportNotFoundException;
 import com.taskit.rpadservice.Domain.Model.StoredFile;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -19,22 +21,53 @@ public class FileController {
     private final UploadFileUseCase uploadFileUseCase;
     private final GetFilesByTaskIdUseCase getFilesByTaskIdUseCase;
     private final FileStoragePort fileStoragePort;
+    private final ReportService reportService;
 
     public FileController(
             UploadFileUseCase uploadFileUseCase,
             GetFilesByTaskIdUseCase getFilesByTaskIdUseCase,
-            FileStoragePort fileStoragePort) {
+            FileStoragePort fileStoragePort,
+            ReportService reportService) {
         this.uploadFileUseCase = uploadFileUseCase;
         this.getFilesByTaskIdUseCase = getFilesByTaskIdUseCase;
         this.fileStoragePort = fileStoragePort;
+        this.reportService = reportService;
     }
 
     @PostMapping(value = "/upload", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<Map<String, String>> uploadFile(
             @RequestParam("file") MultipartFile file,
             @RequestParam(value = "taskId", required = false) String taskId,
+            @RequestParam(value = "reportId", required = false) String reportId,
             @RequestParam(value = "folder", required = false) String folder) {
-        String fileUrl = uploadFileUseCase.uploadFile(file, taskId, folder);
+        String resolvedTaskId = taskId;
+        if (reportId != null && !reportId.isBlank()) {
+            try {
+                resolvedTaskId = reportService.getReportTaskId(reportId);
+            } catch (ReportNotFoundException exception) {
+                return ResponseEntity.notFound().build();
+            }
+        }
+        if (resolvedTaskId == null || resolvedTaskId.isBlank()) {
+            return ResponseEntity.badRequest().build();
+        }
+
+        String fileUrl = uploadFileUseCase.uploadFile(file, resolvedTaskId, folder);
+        return ResponseEntity.ok(Map.of("url", fileUrl));
+    }
+
+    @PostMapping(value = "/reports/{reportId}/upload", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public ResponseEntity<Map<String, String>> uploadReportFile(
+            @PathVariable String reportId,
+            @RequestParam("file") MultipartFile file) {
+        final String taskId;
+        try {
+            taskId = reportService.getReportTaskId(reportId);
+        } catch (ReportNotFoundException exception) {
+            return ResponseEntity.notFound().build();
+        }
+
+        String fileUrl = uploadFileUseCase.uploadFile(file, taskId);
         return ResponseEntity.ok(Map.of("url", fileUrl));
     }
 
